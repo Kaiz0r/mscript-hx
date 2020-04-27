@@ -1,0 +1,11 @@
+package;
+
+import MScript;
+
+class GolemTest{
+  static function main(){
+	var parser = new MScript.GolemParser();
+
+	parser.parse("set t to 7;\nset s to 20;echo t is $t and s is $s;add $s to t;echo and combined, they form $t;add f to r");
+  }
+}
